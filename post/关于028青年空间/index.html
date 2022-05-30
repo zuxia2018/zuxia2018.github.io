@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于028青年空间 | 足下文化</title>
+<link rel="shortcut icon" href="https://zuxia2018.github.io/favicon.ico?v=1653877321555">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zuxia2018.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于028青年空间 | 足下文化 - Atom Feed" href="https://zuxia2018.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="028青年空间是成都首家民间青年空间。028青年空间通过组织各种人文社科艺术公益等活动，旨在帮助青年人不断认知自我、探知外界，发现生活的多样性！
+我们会开展分享会、交流会、自由谈、青年活动、桌游等一系列青年活动，和青年人一起去探索真实的世界..." />
+    <meta name="keywords" content="028青年空间" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zuxia2018.github.io">
+  <img class="avatar" src="https://zuxia2018.github.io/images/avatar.png?v=1653877321555" alt="">
+  </a>
+  <h1 class="site-title">
+    足下文化
+  </h1>
+  <p class="site-description">
+    探寻真实的世界
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于028青年空间
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-03-23
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://zuxia2018.github.io/tag/028-qing-nian-kong-jian/" class="post-tag">
+                  # 028青年空间
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>028青年空间是成都首家民间青年空间。028青年空间通过组织各种人文社科艺术公益等活动，旨在帮助青年人不断认知自我、探知外界，发现生活的多样性！</p>
+<p>我们会开展分享会、交流会、自由谈、青年活动、桌游等一系列青年活动，和青年人一起去探索真实的世界和生活的另一种可能性。</p>
+<p>新浪微博：http://weibo.com/028youthspace<br>
+微信公众号：028青年空间(qingniankongjian028)</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zuxia2018.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://zuxia2018.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
